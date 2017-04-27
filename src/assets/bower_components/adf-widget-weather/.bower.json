@@ -1,0 +1,48 @@
+{
+  "name": "adf-widget-weather",
+  "version": "0.2.0",
+  "main": "dist/adf-widget-weather.js",
+  "ignore": [
+    "bower.json",
+    ".bowerrc",
+    ".jshintrc",
+    ".gitignore",
+    "gulpfile.js",
+    "node_modules",
+    "package.json",
+    "components",
+    "src"
+  ],
+  "keywords": [
+    "dashboard",
+    "widget",
+    "adf",
+    "adf-widget",
+    "weather",
+    "temperature"
+  ],
+  "description": "Weather widget for the angular-dashboard-framework",
+  "dependencies": {
+    "angular-dashboard-framework": ">0.8.0"
+  },
+  "devDependencies": {
+    "angular-local-storage": "0.1.5"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css"
+      ]
+    }
+  },
+  "homepage": "https://github.com/angular-dashboard-framework/adf-widget-weather",
+  "_release": "0.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.0",
+    "commit": "88ac583ac04f74ce85986e13c71b881ce5143465"
+  },
+  "_source": "https://github.com/angular-dashboard-framework/adf-widget-weather.git",
+  "_target": "^0.2.0",
+  "_originalSource": "adf-widget-weather"
+}
