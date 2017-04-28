@@ -28,17 +28,18 @@ angular.module('app.core', [
    'adf.widget.weatherTemperature',
   'adf.widget.weatherPressure',
     'adf.widget.weatherHumidity',
-    'adf.widget.weatherRain'
+    'adf.widget.weatherRain',
+    //'adf.widget.github'
 ])
 
 .controller('SampleController', function($scope){
 
-    var name = 'dashboard sample';
+   var name = 'dashboard sample';
     var model;
     if (!model) {
         // set default model for demo purposes
         model = {
-            title: "Dashboard sample",
+            title: "Weather",
             structure: "3-3-3-3",
             rows: [{
                 columns: [
@@ -84,7 +85,7 @@ angular.module('app.core', [
 
                                 type: "weatherRain",
                                 config: {
-                                    location: "Buenos Aires"
+                                    location: "Manchester"
                                 },
                                 title: "Rain probability"
                             }]

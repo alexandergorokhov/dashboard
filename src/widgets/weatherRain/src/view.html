@@ -6,7 +6,8 @@
     <h4>{{data.name}} ({{data.sys.country}})</h4>
     <dl>
       <dt>Rain:</dt>
-      <dd>{{data.main.temp | number:2}} %</dd>
+      <dd ng-show="rain">Si</dd>
+      <dd ng-show="!rain">No</dd>
     </dl>
   </div>
 </div>

@@ -33,7 +33,7 @@ angular.module('adf.widget.weatherHumidity', ['adf.provider','adf.widget.weather
         title: 'Weather',
         description: 'Display the current temperature of a city',
         templateUrl: 'src/widgets/weatherHumidity/src/view.html',
-        controller: 'weatherCtrl',
+        controller: 'weatherHumidityCtrl',
         reload: true,
         resolve: {
           data: function(weatherService, config){
@@ -48,7 +48,7 @@ angular.module('adf.widget.weatherHumidity', ['adf.provider','adf.widget.weather
       });
   })
 
-  .controller('weatherCtrl', function($scope, data){
+  .controller('weatherHumidityCtrl', function($scope, data){
     $scope.data = data;
     console.log("Inside weatherHumidity");
 

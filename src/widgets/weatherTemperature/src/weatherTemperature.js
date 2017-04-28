@@ -33,7 +33,7 @@ angular.module('adf.widget.weatherTemperature', ['adf.provider','adf.widget.weat
         title: 'Weather',
         description: 'Display the current temperature of a city',
         templateUrl: 'src/widgets/weatherTemperature/src/view.html',
-        controller: 'weatherCtrl',
+        controller: 'weatherTemperatureCtrl',
         reload: true,
         resolve: {
           data: function(weatherService, config){
@@ -48,7 +48,7 @@ angular.module('adf.widget.weatherTemperature', ['adf.provider','adf.widget.weat
       });
   })
 
-  .controller('weatherCtrl', function($scope, data){
+  .controller('weatherTemperatureCtrl', function($scope, data){
     $scope.data = data;
     console.log("Inside weatherTemperature");
   });
