@@ -7,7 +7,7 @@
           rel="stylesheet">
     <link href="src/assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="src/assets/bower_components/angular-dashboard-framework/dist/angular-dashboard-framework.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -25,9 +25,8 @@
     </div>
 </nav>
     <div ng-view></div>
-<div class="text-center all-icon">
-    <div class="sun">Here</div>
-</div>
+
+
 
 
 </div>
@@ -67,6 +66,7 @@
 
     <!-- module -->
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="src/widgets/weatherChart/components/Chart.js/Chart.js"></script>
 
     <!-- services-->
     <script type="text/javascript" src="src/services/weatherService.js"></script>
@@ -76,8 +76,18 @@
     <script type="text/javascript" src="src/widgets/weatherPressure/src/weatherPressure.js"></script>
     <script type="text/javascript" src="src/widgets/weatherHumidity/src/weatherHumidity.js"></script>
     <script type="text/javascript" src="src/widgets/weatherRain/src/weatherRain.js"></script>
-  <!--  <script type="text/javascript" src="src/widgets/weatherChart/src/weatherChart.js"></script>
--->
+
+
+    <!-- chart widget-->
+    <script type="text/javascript" src="src/widgets/weatherChart/src/weatherChart.js"></script>
+    <script type="text/javascript" src="src/widgets/weatherChart/components/Chart.js/Chart.js"></script>
+    <script type="text/javascript" src="src/widgets/weatherChart/components/angular-chart.js/dist/angular-chart.js"></script>
+    <script type="text/javascript" src="src/widgets/weatherChart/src/service.js"></script>
+    <script type="text/javascript" src="src/widgets/weatherChart/src/author.controller.js"></script>
+    <script type="text/javascript" src="src/widgets/weatherChart/src/commits.controller.js"></script>
+    <script type="text/javascript" src="src/widgets/weatherChart/src/history.controller.js"></script>
+    <script type="text/javascript" src="src/widgets/weatherChart/src/issues.controller.js"></script>
+    <script type="text/javascript" src="src/widgets/weatherChart/src/events.controller.js"></script>
 </div>
 </body>
 

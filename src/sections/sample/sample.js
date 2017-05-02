@@ -29,7 +29,9 @@ angular.module('app.core', [
   'adf.widget.weatherPressure',
     'adf.widget.weatherHumidity',
     'adf.widget.weatherRain',
-    //'adf.widget.github'
+    'adf.widget.github',
+
+
 ])
 
 .controller('SampleController', function($scope){
@@ -85,12 +87,23 @@ angular.module('app.core', [
 
                                 type: "weatherRain",
                                 config: {
-                                    location: "Manchester"
+                                    location: "Buenos Aires"
+                                },
+                                title: "Rain probability"
+                            }]
+                    },
+                    {
+                        styleClass: "col-md-12",
+                        widgets: [
+                            {
+
+                                type: "weatherChart",
+                                config: {
+                                    location: "Buenos Aires"
                                 },
                                 title: "Rain probability"
                             }]
                     }
-
 
 
                 ]

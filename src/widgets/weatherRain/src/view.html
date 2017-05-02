@@ -6,8 +6,12 @@
     <h4>{{data.name}} ({{data.sys.country}})</h4>
     <dl>
       <dt>Rain:</dt>
-      <dd ng-show="rain">Si</dd>
-      <dd ng-show="!rain">No</dd>
+      <dd ng-show="rain">Raining</dd>
+      <dd ng-show="rain"><i class="fa fa-cloud fa-4x"></i></dd>
+      <dd ng-show="!rain">Not Raining</dd>
+      <dd ng-show="!rain"><i class="fa fa-sun-o fa-4x"></i></dd>
+
     </dl>
+
   </div>
 </div>

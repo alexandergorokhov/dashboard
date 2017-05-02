@@ -36,7 +36,7 @@ function RegisterWidgets(dashboardProvider) {
     category: 'GitHub',
     controllerAs: 'vm',
     edit: {
-      templateUrl: '{widgetsPath}/github/src/edit.html'
+      templateUrl: 'weatherChart/src/edit.html'
     }
   };
 
@@ -57,25 +57,25 @@ function RegisterWidgets(dashboardProvider) {
       title: 'Github History',
       description: 'Display the commit history of a GitHub project as chart',
       controller: 'GithubHistoryController',
-      templateUrl: '{widgetsPath}/github/src/line-chart.html'
+      templateUrl: 'weatherChart/src/line-chart.html'
     }, commitWidgets))
     .widget('githubAuthor', angular.extend({
       title: 'Github Author',
       description: 'Displays the commits per author as pie chart',
       controller: 'GithubAuthorController',
-      templateUrl: '{widgetsPath}/github/src/pie-chart.html'
+      templateUrl: 'weatherChart/src/pie-chart.html'
     }, commitWidgets))
     .widget('githubCommits', angular.extend({
       title: 'Github Commits',
       description: 'Displays the commits as list',
       controller: 'GithubCommitsController',
-      templateUrl: '{widgetsPath}/github/src/commits.html'
+      templateUrl: 'weatherChart/src/commits.html'
     }, commitWidgets))
     .widget('githubIssues', angular.extend({
       title: 'Github Issues',
       description: 'Displays issues as list of a GitHub project',
       controller: 'GithubIssuesController',
-      templateUrl: '{widgetsPath}/github/src/issues.html',
+      templateUrl: 'weatherChart/src/issues.html',
       resolve: {
         issues: function(github, config){
           if (config.path){
@@ -90,10 +90,10 @@ function RegisterWidgets(dashboardProvider) {
       category: 'GitHub',
       controller: 'GithubEventsController',
       controllerAs: 'vm',
-      templateUrl: '{widgetsPath}/github/src/events.user.html',
+      templateUrl: 'weatherChart/src/events.user.html',
       reload: true,
       edit: {
-        templateUrl: '{widgetsPath}/github/src/events.user.edit.html'
+        templateUrl: 'weatherChart/src/events.user.edit.html'
       },
       resolve: {
         events: function(github, config){
@@ -109,10 +109,10 @@ function RegisterWidgets(dashboardProvider) {
       category: 'GitHub',
       controller: 'GithubEventsController',
       controllerAs: 'vm',
-      templateUrl: '{widgetsPath}/github/src/events.org.html',
+      templateUrl: 'weatherChart/src/events.org.html',
       reload: true,
       edit: {
-        templateUrl: '{widgetsPath}/github/src/events.org.edit.html'
+        templateUrl: 'weatherChart/src/events.org.edit.html'
       },
       resolve: {
         events: function(github, config){
@@ -128,10 +128,10 @@ function RegisterWidgets(dashboardProvider) {
       category: 'GitHub',
       controller: 'GithubEventsController',
       controllerAs: 'vm',
-      templateUrl: '{widgetsPath}/github/src/events.repo.html',
+      templateUrl: 'weatherChart/src/events.repo.html',
       reload: true,
       edit: {
-        templateUrl: '{widgetsPath}/github/src/events.repo.edit.html'
+        templateUrl: 'weatherChart/src/events.repo.edit.html'
       },
       resolve: {
         events: function(github, config){

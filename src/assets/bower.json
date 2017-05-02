@@ -47,7 +47,9 @@
     "jquery-ui": "^1.12.1",
     "angular-route": "^1.5.8",
     "angular-resource": "^1.5.8",
-    "angular-touch": "^1.6.1"
+    "angular-touch": "^1.6.1",
+    "components-font-awesome": "^4.7.0",
+    "adf-widget-github": "^0.5.0"
   },
   "devDependencies": {
     "angular-mocks": ">=1.2",
